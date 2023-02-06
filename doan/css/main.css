@@ -1,0 +1,74 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.doan {
+    width: 100%;
+    height: 100%;
+}
+.header {
+    width: 100%;
+    padding:0px 30px;
+    margin-top:33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.menu {
+    display: flex; 
+}
+.menu .muc {
+    margin: 0 -19px;
+}
+.muc{
+    padding: 0 30px;
+}
+.menu .muc a  {
+    text-decoration: none;
+    color: gray;
+}
+.muc img {
+    width: 20px;
+    height: 20px;
+}
+.noidung1{
+    width: 100%; 
+    height: 500px;
+    background-image: url("image/anh2.jpg");
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    opacity: 0.9;
+    position: relative ;
+    padding: 6px 133px;
+}
+.gioithieu   {
+    font-size: 70px;
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    margin-top: 70px;
+    position: relative;
+}
+
+.noidung1 .gioithieu{
+    width: 50%;
+}
+.gioithieu p{
+    color: white;
+}
+.gioithieu button{
+    width: 250px;
+    height: 70px;
+    border-radius: 70px;
+    background-color:#1d1a1a;
+    color: #fff;
+    border:none;
+    outline: none;
+    transition: 0.4s;
+}
+.gioithieu button:hover{
+    background-color: #e2573e;
+    color: #000000;
+}
+
