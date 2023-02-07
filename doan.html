@@ -1,0 +1,306 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiệm bánh bất ổn </title>
+    <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    .thongtin{
+        margin-top: 70px;
+        margin-left: 100px;
+    }
+    .thongtin li {
+        list-style: none;
+        display: inline-block;
+    }
+    .thongtin li a{
+        text-decoration: none;
+        color: grey;
+        padding: 20px;
+        
+    }
+    .timkiem button {
+    width: 110px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    /* border-radius: 5px; */
+}
+.timkiem{
+    margin: 20px;
+}
+.timkiem hr{
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+    
+}
+.timkiem1{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 10px;
+    transition-duration: 500ms;
+    cursor: pointer;
+    font-family: 'inter',sans-serif;
+    font-family: 'Lato',sans-serif;
+    font-size: 15px;
+    border: 1px solid rgb(252, 232, 53);
+    overflow: hidden;
+    background-image: url(css/image/timkiem3.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 45% 50%;
+}
+.timkiem1:hover{
+    border: 1px solid rgb(0, 0, 0); 
+}
+.timkiem1:focus{
+    width: 100%;
+    cursor: text;
+    padding-left: 50px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    background-color: #ffffff;
+    border: 1px solid rgb(189, 177, 16);
+    background-image: url(css/image/timkiem3.png) no-repeat;
+    background-size: 15px;
+    background-position: 10% 50%;
+    border-radius: 50px;
+    
+}
+.menudau
+{
+        background-color: #120c32;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 16px;
+        border-radius: 32px;
+        gap: 16px;
+        box-shadow: #ff995030 0px 8px 24px;
+        width: 160%;
+        margin-top: 70px;
+}
+.menudau > li{
+    margin-right: 50px;
+    display: inline-block;
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+.menudau > li > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255) ;
+}
+
+.menudau > li > a:hover{
+    color: red;
+}
+.menudau > li > a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom center;;
+}
+.menudau >li ::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #ff9950;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+.nen1{
+    width: 100%;
+    height: 600px;
+    background-image: url("css/image/anh2.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    padding: 0 100px;
+}
+.nen1 .gioithieu{
+    width: 50%;
+}
+.nen1 .gioithieu h2{
+    font-size: 50px;
+    color: white;
+    margin-top: 75px;
+}
+.nen1 .gioithieu p{
+    color: rgb(209, 197, 197);
+}
+.nen1 .gioithieu button{
+    color: white;
+    background-color:#1d1a1a;
+    border: none;
+    outline: none;  ;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 5px 0 rgb(14, 14, 12) ;
+    transition: .5s;
+    width: 175px;
+    height: 40px;
+    margin-top: 70px;
+}
+.nen1 .gioithieu button:active{
+    box-shadow: none;
+    transform: translateY(6px);
+
+}
+.nen1 .gioithieu button:hover{
+    color: rgb(6, 6, 6);
+    background-color: rgb(241, 41, 75);
+
+}
+.banhkem{
+    margin-top: 75px;
+    padding-top: 25px;
+}
+.nametitle{
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.nametitle h2{
+    font-size: 40px;
+    color: grey;
+}
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 logo">
+                <img src="css/image/logo.png" alt="">
+            </div>
+            <div class="col-9 thanhghi ">
+                <ul class="menudau" id="#bt7">
+                    <li><a href="#bt7">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Dịch vụ </a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><input  class="timkiem1" placeholder="Tìm kiếm bánh "></li>    
+                </ul>
+        </div>
+        <div class="nen1">
+            <div class="gioithieu">
+                <h2 >
+                    Hương vị nguyên bản 
+                    <br>Bánh quy Pháp
+                </h2>
+                <p>Chuyên cung cấp cái loại bánh ngọt cho toàn người dân Việt</p>
+                <button>Mua ngay</button>
+            </div>
+        </div>
+        <div class="nametitle">
+            <h2>Sản phẩm bánh của chúng tôi</h2>
+        </div>
+        <div class="row banhkem">
+            <div class="col-md-4 ">
+                <div class="card">
+                    <div class="card-header">
+                        <h3> Banhs que phap </h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="css/image/banh2.jpg" class="card-img">
+                    </div>
+                    <div class="card-footer">
+                        <p>Vị ngọt tươi ngon từ sữa </p>
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <h3><p>Giá: 200.000 VNĐ</p></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3> Banhs que phap </h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="css/image/banh2.jpg" class="card-img">
+                    </div>
+                    <div class="card-footer">
+                        <p>Vị ngọt tươi ngon từ sữa </p>
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <h3><p>Giá: 200.000 VNĐ</p></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3> Banhs que phap </h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="css/image/banh2.jpg" class="card-img">
+                    </div>
+                    <div class="card-footer">
+                        <p>Vị ngọt tươi ngon từ sữa </p>
+                        <span>⭐⭐⭐⭐⭐</span>    
+                        <h3><p>Giá: 200.000 VNĐ</p></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row banhkem">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3> Banhs que phap </h3>
+                        </div>
+                        <div class="card-body">
+                            <img src="css/image/banh2.jpg" class="card-img">
+                        </div>
+                        <div class="card-footer">
+                            <p>Vị ngọt tươi ngon từ sữa </p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                            <h3><p>Giá: 200.000 VNĐ</p></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3> Banhs que phap </h3>
+                        </div>
+                        <div class="card-body">
+                            <img src="css/image/banh2.jpg" class="card-img">
+                        </div>
+                        <div class="card-footer">
+                            <p>Vị ngọt tươi ngon từ sữa </p>
+                            <span>⭐⭐⭐⭐⭐</span>   
+                            <h3><p>Giá: 200.000 VNĐ</p></h3>              
+                           </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3> Banhs que phap </h3>
+                        </div>
+                        <div class="card-body">
+                            <img src="css/image/banh2.jpg" class="card-img">
+                        </div>
+                        <div class="card-footer">
+                            <p>Vị ngọt tươi ngon từ sữa </p>
+                            <span>⭐⭐⭐⭐⭐</span>
+                            <h3><p>Giá: 200.000 VNĐ</p></h3>
+                            <span>Số lượng :</span>
+                            <input type="number" min="1" max="20" >
+                            <button>bỏ vào giỏ </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="css/bootstrap.bundle.min.js"></script>
+</body>
+</html>
