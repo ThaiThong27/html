@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <form class="needs-validation" name="frmthanhtoan" method="post"
+            action="#">
+            <input type="hidden" name="tendangnhap" value="dnpcuong">
+            <div class="py-5 text-center">
+                <i class="fa fa-credit-card fa-4x" aria-hidden="true"></i>
+                <h2>Thanh toán</h2>
+                <p class="lead">Vui lòng kiểm tra thông tin Khách hàng, thông tin Giỏ hàng trước khi Đặt hàng.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 order-md-2 mb-4">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Giỏ hàng</span>
+                        <span class="badge badge-secondary badge-pill">2</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <input type="hidden" name="sanphamgiohang[1][sp_ma]" value="2">
+                        <input type="hidden" name="sanphamgiohang[1][gia]" value="20.000">
+                        <input type="hidden" name="sanphamgiohang[1][soluong]" value="2">
+
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Bánh ngọt</h6>
+                                <small class="text-muted">20.000Đ</small>
+                            </div>
+                            <span class="text-muted">20.000Đ</span>
+                        </li>
+                        <input type="hidden" name="sanphamgiohang[2][sp_ma]" value="4">
+                        <input type="hidden" name="sanphamgiohang[2][gia]" value="20.000">
+                        <input type="hidden" name="sanphamgiohang[2][soluong]" value="8">
+
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Bánh ngọt</h6>
+                                <small class="text-muted">20.000Đ</small>
+                            </div>
+                            <span class="text-muted">20.000Đ</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Tổng thành tiền</span>
+                            <strong>40.000Đ</strong>
+                        </li>
+                    </ul>
+
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Mã khuyến mãi">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-secondary">Xác nhận</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">Thông tin khách hàng</h4>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="txtFullName">Họ tên</label>
+                            <input type="text" class="form-control" name="ten" id="txtFullName" value="Họ và tên" readonly="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="">Giới tính</label>
+                            <input type="text" class="form-control" name="gioitinh" id="gioitinh" value="Nam" readonly="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="txtAddress">Địa chỉ</label>
+                            <input type="text" class="form-control" name="diachi" id="txtAddress" value="TP. Hồ Chí Minh" readonly="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="txtPhone">Điện thoại</label>
+                            <input type="text" class="form-control" name="dienthoai" id="tel" value="+84" readonly="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" name="email" id="email" value="@gmail.com" readonly="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="ngaysinh">Ngày sinh</label>
+                            <input type="text" class="form-control" name="ngaysinh" id="ngaysinh" value="23/01/2004" readonly="">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="number">CMND</label>
+                            <input type="text" class="form-control" name="cmnd" id="cmnd" value="0000" readonly="">
+                        </div>
+                    </div>
+
+                    <h4 class="mb-3">Hình thức thanh toán</h4>
+
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="httt-1" name="httt_ma" type="radio" class="custom-control-input" required=""
+                                value="1">
+                            <label class="custom-control-label" for="httt-1">Tiền mặt</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="httt-2" name="httt_ma" type="radio" class="custom-control-input" required=""
+                                value="2">
+                            <label class="custom-control-label" for="httt-2">Chuyển khoản</label>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit" name="btnDatHang">Đặt hàng</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
